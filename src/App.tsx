@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import JobDetails from "./pages/JobDetails";
 import NotFound from "./pages/NotFound";
 import Profile from "./pages/Profile";
+import Auth from "./pages/Auth";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/job/:id" element={<JobDetails />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/auth" element={<Auth />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
