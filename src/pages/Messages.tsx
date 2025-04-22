@@ -7,7 +7,7 @@ import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Search, Plus, Paperclip, Smile, PaperPlane, X } from "lucide-react";
+import { Search, Plus, Paperclip, Smile, Send, X } from "lucide-react";
 
 const Messages = () => {
   const [currentChat, setCurrentChat] = useState('Cult of details');
@@ -434,7 +434,7 @@ const Messages = () => {
               className="ml-2 bg-indigo-600 hover:bg-indigo-700 text-white"
               onClick={handleSendMessage}
             >
-              <PaperPlane className="h-4 w-4" />
+              <Send className="h-4 w-4" />
             </Button>
           </div>
         </div>
