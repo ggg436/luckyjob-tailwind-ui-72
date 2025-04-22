@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, MapPin, Calendar, Briefcase, ChevronDown, Filter, Sliders } from 'lucide-react';
+import { Search, MapPin, Calendar, Briefcase, ChevronDown, Filter, Sliders, Bookmark } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
 import { Checkbox } from '@/components/ui/checkbox';
