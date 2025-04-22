@@ -1,7 +1,8 @@
 
 import { Job } from "@/data/jobs";
 import { Button } from "@/components/ui/button";
-import { Bookmark } from "lucide-react";
+import { Bookmark, Building } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface JobCardProps {
   job: Job;
@@ -24,8 +25,7 @@ export const JobCard = ({ job }: JobCardProps) => {
             <h3 className="text-xl font-bold">{job.title}</h3>
           </div>
           <div className={`w-10 h-10 flex items-center justify-center rounded-full ${job.logoColor} bg-white`}>
-            {/* Company icon placeholder */}
-            <div className="w-6 h-6 bg-current rounded-full" />
+            <Building className="w-5 h-5" />
           </div>
         </div>
 
@@ -51,9 +51,11 @@ export const JobCard = ({ job }: JobCardProps) => {
             <p className="font-bold">{job.salary}</p>
             <p className="text-sm text-gray-600">{job.location}</p>
           </div>
-          <Button variant="default" className="bg-black text-white hover:bg-gray-800">
-            Details
-          </Button>
+          <Link to={`/job/${job.id}`}>
+            <Button className="bg-black text-white hover:bg-gray-800">
+              Details
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
