@@ -1,18 +1,13 @@
 
-import { useState } from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Plus } from "lucide-react";
-import { Chat } from '@/types/chat';
+import { useChat } from '@/context/ChatContext';
 
-interface ChatSidebarProps {
-  chats: Chat[];
-  currentChat: string;
-  setCurrentChat: (name: string) => void;
-}
+export const ChatSidebar = () => {
+  const { chats, currentChat, setCurrentChat } = useChat();
 
-export const ChatSidebar = ({ chats, currentChat, setCurrentChat }: ChatSidebarProps) => {
   return (
     <div className="w-72 border-r border-gray-200 flex flex-col">
       <div className="h-16 flex items-center px-4 border-b border-gray-200">
@@ -72,11 +67,13 @@ export const ChatSidebar = ({ chats, currentChat, setCurrentChat }: ChatSidebarP
   );
 };
 
-const ChatListItem = ({ chat, isActive, onClick }: { 
-  chat: Chat; 
-  isActive: boolean; 
+interface ChatListItemProps {
+  chat: Chat;
+  isActive: boolean;
   onClick: () => void;
-}) => (
+}
+
+const ChatListItem = ({ chat, isActive, onClick }: ChatListItemProps) => (
   <div
     className={`flex items-center space-x-3 px-2 py-2 rounded-lg cursor-pointer ${
       isActive ? 'bg-pink-100' : 'hover:bg-gray-100'
