@@ -71,7 +71,7 @@ export const messages: ChatMessage[] = [
   {
     id: 1,
     sender: 'Zain George',
-    content: 'Hello! Finally found the time to write to you! I need your help in creating interactive animations for my mobile application.',
+    content: 'Hello! I need your help in creating interactive animations for my mobile application.',
     time: '1 day ago',
     isMe: false,
     avatar: 'https://readdy.ai/api/search-image?query=professional%20portrait%20of%20a%20young%20male%20designer%20with%20creative%20style%2C%20minimalist%20background%2C%20high%20quality%20professional%20headshot%2C%20soft%20lighting%2C%20neutral%20colors%2C%20modern%20aesthetic&width=40&height=40&seq=9&orientation=squarish'
@@ -79,21 +79,37 @@ export const messages: ChatMessage[] = [
   {
     id: 2,
     sender: 'You',
-    content: 'Can I send you files?',
+    content: 'Can I send you some reference files?',
     time: '1 day ago',
     isMe: true,
     avatar: ''
   },
   {
     id: 3,
-    sender: 'You',
-    content: 'Hey! Okay, send out.',
+    sender: 'Zain George',
+    content: 'Sure! I would love to see some examples of interactive animations you have worked on before.',
     time: '23 hours ago',
+    isMe: false,
+    avatar: 'https://readdy.ai/api/search-image?query=professional%20portrait%20of%20a%20young%20male%20designer%20with%20creative%20style%2C%20minimalist%20background%2C%20high%20quality%20professional%20headshot%2C%20soft%20lighting%2C%20neutral%20colors%2C%20modern%20aesthetic&width=40&height=40&seq=9&orientation=squarish'
+  },
+  {
+    id: 4,
+    sender: 'You',
+    content: 'I have a few Figma prototypes that showcase some smooth micro-interactions. Would you like me to share the links?',
+    time: 'Today',
     isMe: true,
     avatar: ''
   },
   {
-    id: 4,
+    id: 5,
+    sender: 'Zain George',
+    content: 'That would be perfect! Looking forward to seeing your work.',
+    time: 'Just now',
+    isMe: false,
+    avatar: 'https://readdy.ai/api/search-image?query=professional%20portrait%20of%20a%20young%20male%20designer%20with%20creative%20style%2C%20minimalist%20background%2C%20high%20quality%20professional%20headshot%2C%20soft%20lighting%2C%20neutral%20colors%2C%20modern%20aesthetic&width=40&height=40&seq=9&orientation=squarish'
+  },
+  {
+    id: 6,
     sender: 'Maria Butler',
     content: 'style.zip',
     time: '5 hours ago',
@@ -102,7 +118,7 @@ export const messages: ChatMessage[] = [
     avatar: 'https://readdy.ai/api/search-image?query=professional%20portrait%20of%20a%20female%20design%20director%20with%20short%20hair%2C%20minimalist%20background%2C%20high%20quality%20professional%20headshot%2C%20soft%20lighting%2C%20neutral%20colors%2C%20modern%20aesthetic&width=40&height=40&seq=10&orientation=squarish'
   },
   {
-    id: 5,
+    id: 7,
     sender: 'You',
     content: "We're having a meeting tomorrow. Can you make it? We're planning on 9 o'clock. Is that OK?",
     time: 'Today',
@@ -110,7 +126,7 @@ export const messages: ChatMessage[] = [
     avatar: ''
   },
   {
-    id: 6,
+    id: 8,
     sender: 'Kiarra Septimus',
     content: "We're going to go over last quarter's sales figures.",
     time: '16:30',
