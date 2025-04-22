@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Plus } from "lucide-react";
 import { useChat } from '@/context/ChatContext';
+import { Chat } from '@/types/chat';
 
 export const ChatSidebar = () => {
   const { chats, currentChat, setCurrentChat } = useChat();
