@@ -11,44 +11,46 @@ const Index = () => {
   const [sortBy, setSortBy] = useState("Last updated");
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white w-full">
       {/* Header */}
-      <header className="bg-black text-white py-4 px-6">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-10">
-            <div className="flex items-center">
-              <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 10V3L4 14H11V21L20 10H13Z" fill="currentColor"/>
-              </svg>
-              <span className="text-xl font-semibold">LuckyJob</span>
+      <header className="bg-black text-white py-4 px-6 w-full">
+        <div className="w-full px-4 xl:px-12">
+          <div className="max-w-7xl mx-auto flex items-center justify-between">
+            <div className="flex items-center space-x-10">
+              <div className="flex items-center">
+                <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 10V3L4 14H11V21L20 10H13Z" fill="currentColor"/>
+                </svg>
+                <span className="text-xl font-semibold">LuckyJob</span>
+              </div>
+              <nav className="hidden md:flex space-x-8">
+                <a href="#" className="hover:text-gray-300">Find job</a>
+                <a href="#" className="hover:text-gray-300">Messages</a>
+                <a href="#" className="hover:text-gray-300">Hiring</a>
+                <a href="#" className="hover:text-gray-300">Community</a>
+                <a href="#" className="hover:text-gray-300">FAQ</a>
+              </nav>
             </div>
-            <nav className="hidden md:flex space-x-8">
-              <a href="#" className="hover:text-gray-300">Find job</a>
-              <a href="#" className="hover:text-gray-300">Messages</a>
-              <a href="#" className="hover:text-gray-300">Hiring</a>
-              <a href="#" className="hover:text-gray-300">Community</a>
-              <a href="#" className="hover:text-gray-300">FAQ</a>
-            </nav>
-          </div>
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center">
-              <MapPin className="w-4 h-4 mr-2" />
-              <span>New York, NY</span>
-            </div>
-            <div className="w-8 h-8 rounded-full overflow-hidden bg-pink-500 flex items-center justify-center">
-              <img 
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt="Profile" 
-                className="object-cover w-full h-full"
-              />
+            <div className="flex items-center space-x-6">
+              <div className="flex items-center">
+                <MapPin className="w-4 h-4 mr-2" />
+                <span>New York, NY</span>
+              </div>
+              <div className="w-8 h-8 rounded-full overflow-hidden bg-pink-500 flex items-center justify-center">
+                <img 
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt="Profile" 
+                  className="object-cover w-full h-full"
+                />
+              </div>
             </div>
           </div>
         </div>
       </header>
 
       {/* Search Bar */}
-      <div className="bg-black text-white py-4 px-6">
-        <div className="max-w-7xl mx-auto">
+      <div className="bg-black text-white py-4 px-6 w-full">
+        <div className="w-full px-4 xl:px-12">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="relative w-full md:w-1/2">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 w-4 h-4" />
@@ -90,8 +92,8 @@ const Index = () => {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-6 py-8">
-        <div className="flex flex-col md:flex-row gap-8">
+      <div className="w-full px-4 xl:px-12 py-8">
+        <div className="flex flex-col md:flex-row gap-8 w-full">
           {/* Left Sidebar */}
           <div className="w-full md:w-1/4">
             {/* CTA Card */}
