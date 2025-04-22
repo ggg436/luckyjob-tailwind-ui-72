@@ -4,9 +4,8 @@ import { ClerkProvider } from "@clerk/clerk-react";
 import App from './App.tsx';
 import './index.css';
 
-// This variable will be replaced with a real key when available
-// You'll need to add your publishable key from the Clerk dashboard
-const PUBLISHABLE_KEY = "pk_test_your-publishable-key";
+// Replace this with your actual Publishable Key from Clerk Dashboard
+const PUBLISHABLE_KEY = "YOUR_ACTUAL_CLERK_PUBLISHABLE_KEY";
 
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Clerk Publishable Key");
